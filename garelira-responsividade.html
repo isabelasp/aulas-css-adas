@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <style>
+          /*Reiniciar as propriedades do proproprio navegador*/
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .principal{
+            width: 100%;
+            height: 100vh;
+        }
+
+        .cabecalho{
+            text-align: center;
+        }
+
+        .conteudo{
+            justify-content: center;
+            gap: 8px;
+            padding: 16px;
+            display: grid;
+        }
+
+        .card{
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+        }
+
+        img{
+            height: 100px;
+        }
+
+        @media(min-width: 576px){
+            .conteudo{
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media(min-width: 768px){
+            .conteudo{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        @media(min-width: 1024px){
+            .conteudo{
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+        }
+
+        @media(min-width: 1200px){
+            .conteudo{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="principal">
+      <div class="cabecalho"><h1>Galeria Imagens Homem Atanha</h1></div>
+         <div class="conteudo">   
+           <div class="card"><img src="img/1.jpeg" alt=""></div>
+            <div class="card"><img src="img/2.jpeg" alt=""></div>
+            <div class="card"><img src="img/3.jpeg" alt=""></div>
+           <div class="card"><img src="img/4.jpeg" alt=""></div>
+            <div class="card"><img src="img/5.jpeg" alt=""></div>
+            <div class="card"><img src="img/6.jpeg" alt=""></div>
+           <div class="card"><img src="img/7.jpeg" alt=""></div>
+        </div>
+    </div>    
+</body>
+</html>
